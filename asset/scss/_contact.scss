@@ -1,0 +1,30 @@
+/* Contact Section */
+.contact_info {
+	display: grid;
+
+	gap: 40px;
+}
+.contact_link {
+	background-color: #ffff;
+	box-shadow: rgba(233, 240, 243, 0.5) 0px 5px 5px 0px,
+		rgb(230, 236, 248) 0px 0px 0px 1px;
+
+	display: grid;
+	place-content: center;
+	text-align: center;
+	padding: 25px;
+	gap: 18px;
+	transition: 0.5s;
+}
+.contact_title {
+	font-size: 20px;
+	color: var(--primary_color);
+}
+
+.contact_icon {
+	font-size: 45px;
+	color: var(--primary_color);
+}
+.contact-description {
+	color: #8a8fa3;
+}

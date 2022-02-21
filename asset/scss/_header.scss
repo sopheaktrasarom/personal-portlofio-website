@@ -1,0 +1,124 @@
+/* nav */
+header {
+	background-color: var(--body-color);
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	transition: 0.5s;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+@media (max-width: 767px) {
+	.nav_menu {
+		overflow: hidden;
+		background-color: var(--body-color);
+		border-top: 1px solid rgba(8, 8, 8, 0.2);
+		max-height: 0;
+		transition: 0.5s;
+	}
+}
+.bar {
+	background-color: var(--text-color);
+	height: 3px;
+	border-radius: 15px;
+	opacity: 1;
+	transform: rotate(0deg);
+	width: 100%;
+	transition: 0.5s;
+}
+.bar1 {
+	transform: translate(0);
+}
+.active .bar1 {
+	transform: translateY(7px) rotate(45deg);
+}
+.active .bar2 {
+	opacity: 0;
+	transform: translateX(-60px);
+}
+.active .bar3 {
+	transform: translateY(-9px) rotate(-45deg);
+}
+
+.nav_header {
+	display: flex;
+	padding: 16px;
+	justify-content: space-between;
+}
+.scroll_header {
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.nav_logo {
+	display: block;
+	font-size: 1.5625rem;
+	font-weight: 700;
+	color: var(--primary_color);
+}
+
+.social_icon {
+	color: var(--primary_color);
+}
+
+.nav_list {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	text-align: center;
+}
+.nav_container {
+	padding: 25px;
+}
+.nav_link {
+	display: block;
+	color: var(--text-color);
+	transition: 0.5s;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.active {
+	color: var(--primary_color);
+}
+.nav_toggle {
+	cursor: pointer;
+	width: 30px;
+	display: grid;
+	transition: 0.5s;
+	gap: 5px;
+}
+.nav_btn {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 15px;
+}
+.bx-moon {
+	font-size: 25px;
+	cursor: pointer;
+}
+#scroll_up {
+	position: fixed;
+	background-color: #fff;
+	font-size: 50px;
+	color: var(--primary_color);
+	cursor: pointer;
+	right: 20px;
+	bottom: -30%;
+	transition: bottom 0.5s;
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.show-scroll#scroll_up {
+	bottom: 20px;
+}
+
+#scroll_up > .bx-up-arrow-alt {
+	font-size: 30px;
+	transition: 0.5s;
+	color: var(--primary_color);
+}

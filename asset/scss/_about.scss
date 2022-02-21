@@ -1,0 +1,49 @@
+/* about section */
+.about_content {
+	gap: 60px;
+}
+.about-sub-title {
+	text-align: center;
+}
+.social_contact {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 25px;
+}
+.social_icon {
+	font-size: 35px;
+	text-align: center;
+	transition: 0.5s;
+}
+.social_icon:hover,
+.social_icon:focus {
+	transform: translateY(5px);
+}
+.about_description {
+	margin-top: 25px;
+}
+.cv {
+	display: grid;
+	gap: 25px;
+}
+.cv_description {
+	text-align: center;
+	margin-top: 25px;
+}
+.cv_download {
+	background-color: var(--primary_color);
+	padding: 15px 20px;
+	width: fit-content;
+	margin: auto;
+	color: #fff;
+	border-radius: 30px;
+	font-weight: 700;
+	transition: 0.5s;
+	margin-top: 25px;
+}
+.cv_download:hover {
+	border: 2px solid var(--primary_color);
+	background-color: #fff;
+	color: var(--primary_color);
+}

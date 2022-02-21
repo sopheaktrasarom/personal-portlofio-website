@@ -1,0 +1,20 @@
+/* Hero section */
+.hero_content {
+	align-items: center;
+	gap: 25px;
+	padding: 50px 0 0;
+}
+.hero_title {
+	font-size: 20px;
+}
+.name {
+	color: var(--primary_color);
+}
+.profile_img {
+	width: 200px;
+	height: 200px;
+	border-radius: 30%;
+	object-fit: cover;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 50px;
+}

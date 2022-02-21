@@ -1,0 +1,28 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	pointer-events: auto;
+	display: block;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+body {
+	color: var(--text-color);
+	transition: 0.5s;
+	background-color: var(--body-color);
+	font-size: 16px;
+}
